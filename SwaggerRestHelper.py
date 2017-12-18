@@ -17,7 +17,7 @@ class RestHelperLibrary(object):
         Login
             [Arguments]  ${username}  ${password}
             ${body}  Create Dictionary  ident=${username}  password=${password}
-            ${login}=  Invoke API  login_post  ${body}
+            ${login}=  Invoke API  login_user  ${body}
             [Return]  ${login}
     """
     
